@@ -1,0 +1,21 @@
+# Credenciais e configurações locais
+.aws/
+.env
+.env.*
+!.env.example
+*Credencial*
+*credentials*
+*.pem
+*.key
+*.pfx
+*.p12
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.auto.tfvars
+__pycache__/
+~$*
+# Materiais de origem e intermediários não públicos
+interno/
+originais/
