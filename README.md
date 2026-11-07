@@ -60,4 +60,4 @@ Este é um repositório de documentação. Não inclui uma implementação execu
 ## Créditos
 
 Prática baseada na Semana de Arquitetura da AWS, no contexto da Escola da Nuvem. A documentação e o diagrama foram reorganizados para este portfólio. A apostila original e arquivos de credenciais não integram o repositório. Não foi aplicada licença aberta a materiais de terceiros.
-# Aplica-o-3Camadas-AWS
+# Aplicação-3Camadas-AWS
