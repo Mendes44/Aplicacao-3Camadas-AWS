@@ -25,7 +25,7 @@ O ambiente foi montado manualmente pelo console em uma VPC distribuída em duas 
 
 | --- | --- |
 
-| VPC e rede | VPC projeto-vpc, CIDR 10.0.0.0/16; duas sub-redes públicas e quatro privadas em duas AZs. O autor confirmou dois NATs zonais. |
+| VPC e rede | VPC projeto-vpc, CIDR 10.0.0.0/16; duas sub-redes públicas e quatro privadas em duas AZs. O projeto utiliza dois NATs zonais. |
 
 | ALB e EC2 | ALB público com grupo de destino; frontend e backend em instâncias privadas. |
 
@@ -59,7 +59,7 @@ A resposta de envio bem-sucedido indica aceitação da solicitação pela fila. 
 
 ### Separação de rede
 
-As instâncias ficam em sub-redes privadas e recebem permissões por IAM Role, sem a necessidade de chaves permanentes no código. SQS e DynamoDB são serviços regionais acessados por APIs; não são instalados nas sub-redes. O NAT atende a saída prevista no laboratório. O autor confirmou dois NAT Gateways zonais, um em cada sub-rede pública. Para manter a saída independente por AZ, as rotas privadas devem apontar ao NAT da própria zona; as rotas não foram inspecionadas nesta revisão.
+As instâncias ficam em sub-redes privadas e recebem permissões por IAM Role, sem a necessidade de chaves permanentes no código. SQS e DynamoDB são serviços regionais acessados por APIs; não são instalados nas sub-redes. O NAT atende a saída prevista no laboratório. O projeto utiliza dois NAT Gateways zonais, um em cada sub-rede pública. Para manter a saída independente por AZ, as rotas privadas devem apontar ao NAT da própria zona; as rotas não foram inspecionadas nesta revisão.
 
 ### O limite de disponibilidade
 

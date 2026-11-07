@@ -4,7 +4,7 @@ Este roteiro organiza a arquitetura para uma nova prática. Não foi executado n
 
 ## 1 Rede e acesso
 
-Confirme a região, duas AZs, duas sub-redes públicas e quatro privadas. Revise as rotas do Internet Gateway e a saída privada via NAT. Na arquitetura confirmada pelo autor, há dois NAT Gateways zonais, um em cada sub-rede pública. Ao reproduzir, associe as rotas privadas ao NAT da respectiva AZ. Crie um grupo para o ALB e outro para os frontends, permitindo HTTP nas EC2 apenas a partir do grupo do ALB. Consumidores da fila não precisam receber tráfego HTTP do ALB.
+Confirme a região, duas AZs, duas sub-redes públicas e quatro privadas. Revise as rotas do Internet Gateway e a saída privada via NAT. Na arquitetura do projeto de Marcos Mendes, há dois NAT Gateways zonais, um em cada sub-rede pública. Ao reproduzir, associe as rotas privadas ao NAT da respectiva AZ. Crie um grupo para o ALB e outro para os frontends, permitindo HTTP nas EC2 apenas a partir do grupo do ALB. Consumidores da fila não precisam receber tráfego HTTP do ALB.
 
 ## 2 Dados e mensageria
 
